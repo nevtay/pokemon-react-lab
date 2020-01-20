@@ -1,0 +1,31 @@
+.PokemonGallery {
+    border: 2px solid black;
+    margin: 50px auto;
+    max-width: 85%;
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background-size: 400% 400%;
+    -webkit-animation: animatedBg 5s ease-in-out infinite;
+    -moz-animation: animatedBg 5s ease-in-out infinite;
+    animation: animatedBg 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes animatedBg {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@-moz-keyframes animatedBg {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@keyframes animatedBg {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
