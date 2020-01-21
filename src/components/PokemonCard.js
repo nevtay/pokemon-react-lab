@@ -13,14 +13,6 @@ function PokemonCard({ pokemon }) {
           {
             <div>
             <p className="englishName">{name.english}</p>
-            <p className="japaneseName hidden">{name.japanese}</p>
-            <p className="chineseName hidden">{name.chinese}</p>
-            <div>
-              <button className="translateName" onClick={function(e) {
-                    
-                    }
-                  }> Translated Names </button>
-            </div>
             </div>
           }
         </div>

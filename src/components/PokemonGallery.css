@@ -14,6 +14,33 @@
     animation: animatedBg 5s ease-in-out infinite;
 }
 
+.PokemonGallery_title {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.PokemonGallery_showResults__title, .PokemonGallery_showResults__number {
+    font-family: "Quicksand", sans-serif;
+}
+
+.PokemonGallery_showResults__title {
+    position: relative;
+    transform: translateX(100%);
+    margin-left: -100%;
+    text-align: center;
+    width: 100%;
+}
+
+.PokemonGallery_showResults__number {
+    text-align: center;
+    margin: 10px auto;
+    font-weight: 700;
+    background: aquamarine;
+    display: inline;
+    padding: 3px;
+}
+
 @-webkit-keyframes animatedBg {
     0%{background-position:0% 44%}
     50%{background-position:100% 57%}
