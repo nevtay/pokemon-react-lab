@@ -63,7 +63,7 @@
     text-shadow: 4px 4px 4px #222;
     border-radius: 5px;
     box-shadow: -5px -5px 2px -2px #444;
-    margin-bottom: 0px;
+    margin-top: 25px;
 }
 
 .pokemon-card__type:nth-child(1) {
@@ -73,7 +73,6 @@
 .pokemon-card__stats {
     font-size: 0.75em;
     margin-top: 15px;
-    margin: -5px 20px;
 }
 
 .hidden {
@@ -88,4 +87,16 @@ button {
     display: inline-block;
     margin-bottom: 20px;
     padding: 5px;
+}
+
+@media (max-width: 767px) {
+    .pokemon-card {
+    font-size: 36px;
+    min-width: 50%;
+    margin: 20px 100px;
+    }
+
+    .pokemon-card__name {
+        margin: -25px;
+    }
 }
