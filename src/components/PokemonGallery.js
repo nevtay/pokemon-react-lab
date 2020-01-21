@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PokemonData from "../pokemon/pokemon";
 import PokemonCard from "./PokemonCard";
 import "./PokemonGallery.css";
@@ -39,14 +39,15 @@ render() {
             </div>  
         )
     } else if (this.state.value === "") {
+        const pokemonShowAll = PokemonData.map(pkmn => {
+            return <PokemonCard pokemon={pkmn} />
+        })
     return (  
         <div>
             <div className="PokemonGallery_title">Pokemon Gallery</div>
             <PokemonSearchBar onChange={this.showResults} value={this.state.value} />
             <div className="PokemonGallery">
-                {PokemonData.map(pkmn => {
-                    return <PokemonCard pokemon={pkmn} />
-                })}
+                {pokemonShowAll}
             </div>
         </div>
         )}
